@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>Explore Albania</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+
+    
+    
+    <style>
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+        } 
+
+        #text{
+            text-align: center;
+            padding-top: 70px;
+        }
+        .text1{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .text2{
+            text-align: center;
+            font-size: medium;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <header class="navbar">
+           <img class="logo" src="./img/alogo.png" alt="logo">
+            <ul>
+                <li><a class="active" href="#Home">Home</a></li>
+                <li><a href="#Aktivitete">Tours</a></li>
+                <li><a href="#Rezervime">Reservations</a></li>
+                <li><a href="#Kontakt">Contact</a></li>
+                <li><a href="#About">About</a></li>
+            
+            </ul>
+        </header>
+    </div> 
+
+  <div class="container">  
+        <div id="text">
+            <h1>Meet our beautiful Albania!</h1>
+        </div>
+        <div class="image-grid">
+          <img class="image-grid-col-2 image-grid-row-2" src="./img/alb.jpg" alt="Tirana">
+          <img src="./img/ksamil.jpg" alt="Ksamil">
+          <img src="./img/berat.jpg" alt="Berat">
+          <img src="./img/rozafa.jpg" alt="Rozafa castle">
+          <img src="./img/theth.jpg" alt="Theth">
+        </div>
+  </div>      
+
+<hr>
+
+  <div class="text1">
+    <h2>Activities to help you explore Albania</h2>
+  </div>
+
+  <div class="flex-container">
+    <div class="trips">
+        <h3 class="text2">Day trip to Bovilla lake</h3>
+        <img src="./img/bovilla.jpg" width="200px" height="200px" alt="Bovilla">
+        <a href="#trips" class="button">Show more</a>
+    </div>
+    <div class="trips">
+        <h3 class="text2">Shala River & Lake Koman</h3>
+        <img src="./img/shalariver.jpeg" width="200px" height="200px" alt="Lumi i Shales">
+        <a href="#trips" class="button">Show more</a>
+    </div>
+    <div class="trips">
+        <h3 class="text2">Kruja Castle</h3>
+        <img src="./img/kruja.jpg" width="200px" height="200px" alt="Kruja">
+        <a href="#trips" class="button">Show more</a>
+    </div>
+    <div class="trips">
+        <h3 class="text2">Rafting-Osumi Kanyons</h3>
+        <img src="./img/rafting.jpg" width="200px" height="200px" alt="Rafting">
+        <a href="#trips" class="button">Show more</a>
+    </div>
+    <div class="trips">
+        <h3 class="text2">Boat trip to Karaburun</h3>
+        <img src="./img/karaburun.jpg" width="200px" height="200px" alt="Karaburun">
+        <a href="#trips" class="button">Show more</a>
+    </div>
+  </div>
+
+ <div class="text1">
+    <h2>Top traditional Albanian foods to try</h2>
+ </div>
+
+  <div class="carousel">
+       <div class="glide">
+           <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                 <li class="glide__slide"><img src="./img/food.jpg" alt="food" width="300px" height="300px"></li>
+                 <li class="glide__slide"><img src="./img/food1.jpg" alt="food"  width="300px" height="300px"></li>
+                 <li class="glide__slide"><img src="./img/food2.jpg" alt="food"  width="300px" height="300px"></li>
+                 <li class="glide__slide"><img src="./img/food3.jpg" alt="food"  width="300px" height="300px"></li>
+                 <li class="glide__slide"><img src="./img/food4.jpg" alt="food"  width="300px" height="300px"></li>
+                 <li class="glide__slide"><img src="./img/food5.jpg" alt="food"  width="300px" height="300px"></li>
+                 <li class="glide__slide"><img src="./img/food6.jpg" alt="food"  width="300px" height="300px"></li>
+              </ul>
+           </div>
+           <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+          </div>
+       </div>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+       new Glide('.glide',{
+        type: 'carousel',
+        startAt: 0,
+        perView: 4
+    }).mount()
+
+  </script>
+</body>    
+</html>
